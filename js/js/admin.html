@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AFFO Studio</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+
+        <h2>AFFO Studio</h2>
+
+        <ul>
+
+            <li>🏠 Tableau de bord</li>
+
+            <li>🎟️ Événements</li>
+
+            <li>➕ Ajouter un événement</li>
+
+            <li>👥 Réservations</li>
+
+            <li>⚙️ Paramètres</li>
+
+            <li>🚪 Déconnexion</li>
+
+        </ul>
+
+    </aside>
+
+    <main class="content">
+
+        <header>
+
+            <h1>Tableau de bord</h1>
+
+            <p>Bienvenue dans AFFO Studio.</p>
+
+        </header>
+
+        <section class="stats">
+
+            <div class="card">
+
+                <h2 id="eventsCount">0</h2>
+
+                <p>Événements</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="reservationsCount">0</h2>
+
+                <p>Réservations</p>
+
+            </div>
+
+            <div class="card">
+
+                <h2 id="ticketsCount">0</h2>
+
+                <p>Billets</p>
+
+            </div>
+
+        </section>
+
+        <section class="add-event">
+
+            <h2>Ajouter un événement</h2>
+
+            <form id="eventForm">
+
+                <input type="text" id="title" placeholder="Nom de l'événement" required>
+
+                <input type="text" id="location" placeholder="Lieu" required>
+
+                <input type="date" id="date" required>
+
+                <input type="time" id="time" required>
+
+                <input type="number" id="price" placeholder="Prix" required>
+
+                <input type="number" id="tickets" placeholder="Nombre de billets" required>
+
+                <input type="file" id="image">
+
+                <textarea id="description" placeholder="Description"></textarea>
+
+                <button type="submit">
+
+                    Publier l'événement
+
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script type="module" src="js/admin.js"></script>
+
+</body>
+
+</html>
